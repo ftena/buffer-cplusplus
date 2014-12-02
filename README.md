@@ -1,4 +1,4 @@
-buffer-c-
+buffer-c++
 =========
 
-Read standard C &amp; C++ data types from buffer
+Read standard C &amp; C++ data types from buffer.
