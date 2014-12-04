@@ -1,0 +1,588 @@
+\hypertarget{classBuffer}{
+\section{Buffer Class Reference}
+\label{classBuffer}\index{Buffer@{Buffer}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBuffer_a7fa5687eb5aeee187cf30d3d89f98751}{Buffer} (uint8\_\-t $\ast$buffer, uint32\_\-t size)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classBuffer_a59b8743e4a5f731bdd0c4185c9ef263b}{
+virtual \hyperlink{classBuffer_a59b8743e4a5f731bdd0c4185c9ef263b}{$\sim$Buffer} ()}
+\label{classBuffer_a59b8743e4a5f731bdd0c4185c9ef263b}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+uint32\_\-t \hyperlink{classBuffer_a61907c35a945626945f77752ec9eaa80}{size} ()
+\begin{DoxyCompactList}\small\item\em Method to get the buffer size. \item\end{DoxyCompactList}\item 
+int8\_\-t \hyperlink{classBuffer_a32f8331e3bce9db17da619458b424d7e}{getChar} ()
+\begin{DoxyCompactList}\small\item\em Method to get a char from the buffer. After calling this method, the position in the buffer is increased by one byte. \item\end{DoxyCompactList}\item 
+int8\_\-t \hyperlink{classBuffer_aaa0175c5b1b72ced0b8edffa157110a5}{getChar} (uint32\_\-t index)
+\begin{DoxyCompactList}\small\item\em Method to get a char from the the position passed to the function. After calling this method, the position in the buffer is increased by one byte. \item\end{DoxyCompactList}\item 
+uint8\_\-t \hyperlink{classBuffer_ab2d089a99d5bceb23d07d00bf745119a}{getUChar} ()
+\begin{DoxyCompactList}\small\item\em Method to get an unsigned char from the buffer. After calling this method, the position in the buffer is increased by one byte. \item\end{DoxyCompactList}\item 
+uint8\_\-t \hyperlink{classBuffer_ac9e1313de63fd9815b38ace7bddc22d8}{getUChar} (uint32\_\-t index)
+\begin{DoxyCompactList}\small\item\em Method to get an unsigned char from the the position passed to the function. After calling this method, the position in the buffer is increased by one byte. \item\end{DoxyCompactList}\item 
+int16\_\-t \hyperlink{classBuffer_a6c22f064293935062f5b61c1d924132d}{getShort} ()
+\begin{DoxyCompactList}\small\item\em Method to get a short from the buffer. After calling this method, the position in the buffer is increased by two bytes. \item\end{DoxyCompactList}\item 
+int16\_\-t \hyperlink{classBuffer_a7eb9d5449cf6553dca6808775d7f5583}{getShort} (uint32\_\-t index)
+\begin{DoxyCompactList}\small\item\em Method to get a short from the the position passed to the function. After calling this method, the position in the buffer is increased by two bytes. \item\end{DoxyCompactList}\item 
+uint16\_\-t \hyperlink{classBuffer_aafccc403480bca311e3837a691e696b4}{getUShort} ()
+\begin{DoxyCompactList}\small\item\em Method to get an unsigned short from the buffer. After calling this method, the position in the buffer is increased by two bytes. \item\end{DoxyCompactList}\item 
+uint16\_\-t \hyperlink{classBuffer_a7951a4bc4a72c3af88c829903949d8c7}{getUShort} (uint32\_\-t index)
+\begin{DoxyCompactList}\small\item\em Method to get an unsigned short from the the position passed to the function. After calling this method, the position in the buffer is increased by two bytes. \item\end{DoxyCompactList}\item 
+int32\_\-t \hyperlink{classBuffer_a7210e64bc79fe779306f0ba8f6d27ec0}{getInt} ()
+\begin{DoxyCompactList}\small\item\em Method to get an integer from the buffer. After calling this method, the position in the buffer is increased by four bytes. \item\end{DoxyCompactList}\item 
+int32\_\-t \hyperlink{classBuffer_af5a294ff99464564ef35bf5ab6b93cf3}{getInt} (uint32\_\-t index)
+\begin{DoxyCompactList}\small\item\em Method to get an integer from the the position passed to the function. After calling this method, the position in the buffer is increased by four bytes. \item\end{DoxyCompactList}\item 
+uint32\_\-t \hyperlink{classBuffer_ad604cb82913c0453caa1f1ccad9ce860}{getUInt} ()
+\begin{DoxyCompactList}\small\item\em Method to get an unsigned integer from the buffer. After calling this method, the position in the buffer is increased by four bytes. \item\end{DoxyCompactList}\item 
+uint32\_\-t \hyperlink{classBuffer_aa05686a1ed29f3d32414d5a518033201}{getUInt} (uint32\_\-t index)
+\begin{DoxyCompactList}\small\item\em Method to get an unsigned integer from the the position passed to the function. After calling this method, the position in the buffer is increased by four bytes. \item\end{DoxyCompactList}\item 
+float \hyperlink{classBuffer_a129bc6d11c9125c1d29c8894880e8605}{getFloat} ()
+\begin{DoxyCompactList}\small\item\em Method to get a float from the buffer. After calling this method, the position in the buffer is increased by four bytes. \item\end{DoxyCompactList}\item 
+float \hyperlink{classBuffer_a9f76bac5c7796adf6713c7cd0f561e43}{getFloat} (uint32\_\-t index)
+\begin{DoxyCompactList}\small\item\em Method to get a float from the the position passed to the function. After calling this method, the position in the buffer is increased by four bytes. \item\end{DoxyCompactList}\item 
+double \hyperlink{classBuffer_a8a373ecd5d76516f8d3569c44adf3381}{getDouble} ()
+\begin{DoxyCompactList}\small\item\em Method to get a double from the buffer. After calling this method, the position in the buffer is increased by eight bytes. \item\end{DoxyCompactList}\item 
+double \hyperlink{classBuffer_a091a79452a41a318824896d65dc2978a}{getDouble} (uint32\_\-t index)
+\begin{DoxyCompactList}\small\item\em Method to get a double from the the position passed to the function. After calling this method, the position in the buffer is increased by eight bytes. \item\end{DoxyCompactList}\item 
+long \hyperlink{classBuffer_a629d217da34e85943eb002910d2bb336}{getLong} ()
+\begin{DoxyCompactList}\small\item\em Method to get a long from the buffer. After calling this method, the position in the buffer is increased by four bytes. \item\end{DoxyCompactList}\item 
+long \hyperlink{classBuffer_a16bcd3bdb5ca1b9a12ca1dc76cf5f28b}{getLong} (uint32\_\-t index)
+\begin{DoxyCompactList}\small\item\em Method to get a long from the the position passed to the function. After calling this method, the position in the buffer is increased by four bytes. \item\end{DoxyCompactList}\item 
+unsigned long \hyperlink{classBuffer_a7145a0142c6dc0c31e1cac08d4f49435}{getULong} ()
+\begin{DoxyCompactList}\small\item\em Method to get an unsigned long from the buffer. After calling this method, the position in the buffer is increased by four bytes. \item\end{DoxyCompactList}\item 
+unsigned long \hyperlink{classBuffer_a70db4c2d0ad70f73ed930a0581dbb1e4}{getULong} (uint32\_\-t index)
+\begin{DoxyCompactList}\small\item\em Method to get an unsigned long from the the position passed to the function. After calling this method, the position in the buffer is increased by four bytes. \item\end{DoxyCompactList}\item 
+int64\_\-t \hyperlink{classBuffer_a515cf0ba59f1970b039362ef22cdcf6c}{getLongLong} ()
+\begin{DoxyCompactList}\small\item\em Method to get a long long from the buffer. After calling this method, the position in the buffer is increased by eight bytes. \item\end{DoxyCompactList}\item 
+int64\_\-t \hyperlink{classBuffer_a5a6117d58e6abb0c7ea50d2c302a4d59}{getLongLong} (uint32\_\-t index)
+\begin{DoxyCompactList}\small\item\em Method to get a long long from the the position passed to the function. After calling this method, the position in the buffer is increased by eight bytes. \item\end{DoxyCompactList}\item 
+uint64\_\-t \hyperlink{classBuffer_a569f8603324b4db03f4461932f7537cb}{getULongLong} ()
+\begin{DoxyCompactList}\small\item\em Method to get an unsigned long long from the buffer. After calling this method, the position in the buffer is increased by eight bytes. \item\end{DoxyCompactList}\item 
+uint64\_\-t \hyperlink{classBuffer_af73ab97665bd53f27bd142234b2ee749}{getULongLong} (uint32\_\-t index)
+\begin{DoxyCompactList}\small\item\em Method to get an unsigned long long from the the position passed to the function. After calling this method, the position in the buffer is increased by eight bytes. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBuffer_a5c61830f4da68ec0052c027ef920efd0}{
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries read} ()}
+\label{classBuffer_a5c61830f4da68ec0052c027ef920efd0}
+
+\item 
+\hypertarget{classBuffer_aff15b0854a1abcb0763abfd910d78fde}{
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries read} (uint32\_\-t pos)}
+\label{classBuffer_aff15b0854a1abcb0763abfd910d78fde}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBuffer_a54b634b41801d4c40fd7c503394f5f3a}{
+std::vector$<$ uint8\_\-t $>$ \hyperlink{classBuffer_a54b634b41801d4c40fd7c503394f5f3a}{buffer\_\-}}
+\label{classBuffer_a54b634b41801d4c40fd7c503394f5f3a}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classBuffer}{Buffer} data. \item\end{DoxyCompactList}\item 
+\hypertarget{classBuffer_a2cd7df689455fe31350a2af8e0c1f4ae}{
+uint32\_\-t \hyperlink{classBuffer_a2cd7df689455fe31350a2af8e0c1f4ae}{position\_\-}}
+\label{classBuffer_a2cd7df689455fe31350a2af8e0c1f4ae}
+
+\begin{DoxyCompactList}\small\item\em Current index in the buffer. \item\end{DoxyCompactList}\item 
+\hypertarget{classBuffer_a7b5cbacdb5bac0aa0639f240dca3788b}{
+uint32\_\-t \hyperlink{classBuffer_a7b5cbacdb5bac0aa0639f240dca3788b}{size\_\-}}
+\label{classBuffer_a7b5cbacdb5bac0aa0639f240dca3788b}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classBuffer}{Buffer} size. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBuffer_a7fa5687eb5aeee187cf30d3d89f98751}{
+\index{Buffer@{Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!Buffer@{Buffer}}
+\subsubsection[{Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Buffer::Buffer (
+\begin{DoxyParamCaption}
+\item[{uint8\_\-t $\ast$}]{buffer, }
+\item[{uint32\_\-t}]{size}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a7fa5687eb5aeee187cf30d3d89f98751}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBuffer_a32f8331e3bce9db17da619458b424d7e}{
+\index{Buffer@{Buffer}!getChar@{getChar}}
+\index{getChar@{getChar}!Buffer@{Buffer}}
+\subsubsection[{getChar}]{\setlength{\rightskip}{0pt plus 5cm}int8\_\-t Buffer::getChar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a32f8331e3bce9db17da619458b424d7e}
+
+
+Method to get a char from the buffer. After calling this method, the position in the buffer is increased by one byte. 
+
+\begin{DoxyReturn}{Returns}
+Data with a size of int8 (equivalent to char) 
+\end{DoxyReturn}
+\hypertarget{classBuffer_aaa0175c5b1b72ced0b8edffa157110a5}{
+\index{Buffer@{Buffer}!getChar@{getChar}}
+\index{getChar@{getChar}!Buffer@{Buffer}}
+\subsubsection[{getChar}]{\setlength{\rightskip}{0pt plus 5cm}int8\_\-t Buffer::getChar (
+\begin{DoxyParamCaption}
+\item[{uint32\_\-t}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_aaa0175c5b1b72ced0b8edffa157110a5}
+
+
+Method to get a char from the the position passed to the function. After calling this method, the position in the buffer is increased by one byte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & position from which the data will be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data with a size of int8 (equivalent to char) 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a8a373ecd5d76516f8d3569c44adf3381}{
+\index{Buffer@{Buffer}!getDouble@{getDouble}}
+\index{getDouble@{getDouble}!Buffer@{Buffer}}
+\subsubsection[{getDouble}]{\setlength{\rightskip}{0pt plus 5cm}double Buffer::getDouble (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a8a373ecd5d76516f8d3569c44adf3381}
+
+
+Method to get a double from the buffer. After calling this method, the position in the buffer is increased by eight bytes. 
+
+\begin{DoxyReturn}{Returns}
+Data with a size of double. 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a091a79452a41a318824896d65dc2978a}{
+\index{Buffer@{Buffer}!getDouble@{getDouble}}
+\index{getDouble@{getDouble}!Buffer@{Buffer}}
+\subsubsection[{getDouble}]{\setlength{\rightskip}{0pt plus 5cm}double Buffer::getDouble (
+\begin{DoxyParamCaption}
+\item[{uint32\_\-t}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a091a79452a41a318824896d65dc2978a}
+
+
+Method to get a double from the the position passed to the function. After calling this method, the position in the buffer is increased by eight bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & position from which the data will be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data with a size of double. 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a129bc6d11c9125c1d29c8894880e8605}{
+\index{Buffer@{Buffer}!getFloat@{getFloat}}
+\index{getFloat@{getFloat}!Buffer@{Buffer}}
+\subsubsection[{getFloat}]{\setlength{\rightskip}{0pt plus 5cm}float Buffer::getFloat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a129bc6d11c9125c1d29c8894880e8605}
+
+
+Method to get a float from the buffer. After calling this method, the position in the buffer is increased by four bytes. 
+
+\begin{DoxyReturn}{Returns}
+Data with a size of float. 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a9f76bac5c7796adf6713c7cd0f561e43}{
+\index{Buffer@{Buffer}!getFloat@{getFloat}}
+\index{getFloat@{getFloat}!Buffer@{Buffer}}
+\subsubsection[{getFloat}]{\setlength{\rightskip}{0pt plus 5cm}float Buffer::getFloat (
+\begin{DoxyParamCaption}
+\item[{uint32\_\-t}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a9f76bac5c7796adf6713c7cd0f561e43}
+
+
+Method to get a float from the the position passed to the function. After calling this method, the position in the buffer is increased by four bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & position from which the data will be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data with a size of float. 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a7210e64bc79fe779306f0ba8f6d27ec0}{
+\index{Buffer@{Buffer}!getInt@{getInt}}
+\index{getInt@{getInt}!Buffer@{Buffer}}
+\subsubsection[{getInt}]{\setlength{\rightskip}{0pt plus 5cm}int32\_\-t Buffer::getInt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a7210e64bc79fe779306f0ba8f6d27ec0}
+
+
+Method to get an integer from the buffer. After calling this method, the position in the buffer is increased by four bytes. 
+
+\begin{DoxyReturn}{Returns}
+Data with a size of int32 (equivalent to int) 
+\end{DoxyReturn}
+\hypertarget{classBuffer_af5a294ff99464564ef35bf5ab6b93cf3}{
+\index{Buffer@{Buffer}!getInt@{getInt}}
+\index{getInt@{getInt}!Buffer@{Buffer}}
+\subsubsection[{getInt}]{\setlength{\rightskip}{0pt plus 5cm}int32\_\-t Buffer::getInt (
+\begin{DoxyParamCaption}
+\item[{uint32\_\-t}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_af5a294ff99464564ef35bf5ab6b93cf3}
+
+
+Method to get an integer from the the position passed to the function. After calling this method, the position in the buffer is increased by four bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & position from which the data will be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data with a size of int32 (equivalent to int) 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a629d217da34e85943eb002910d2bb336}{
+\index{Buffer@{Buffer}!getLong@{getLong}}
+\index{getLong@{getLong}!Buffer@{Buffer}}
+\subsubsection[{getLong}]{\setlength{\rightskip}{0pt plus 5cm}long Buffer::getLong (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a629d217da34e85943eb002910d2bb336}
+
+
+Method to get a long from the buffer. After calling this method, the position in the buffer is increased by four bytes. 
+
+\begin{DoxyReturn}{Returns}
+Data with a size of long. 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a16bcd3bdb5ca1b9a12ca1dc76cf5f28b}{
+\index{Buffer@{Buffer}!getLong@{getLong}}
+\index{getLong@{getLong}!Buffer@{Buffer}}
+\subsubsection[{getLong}]{\setlength{\rightskip}{0pt plus 5cm}long Buffer::getLong (
+\begin{DoxyParamCaption}
+\item[{uint32\_\-t}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a16bcd3bdb5ca1b9a12ca1dc76cf5f28b}
+
+
+Method to get a long from the the position passed to the function. After calling this method, the position in the buffer is increased by four bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & position from which the data will be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data with a size of long. 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a515cf0ba59f1970b039362ef22cdcf6c}{
+\index{Buffer@{Buffer}!getLongLong@{getLongLong}}
+\index{getLongLong@{getLongLong}!Buffer@{Buffer}}
+\subsubsection[{getLongLong}]{\setlength{\rightskip}{0pt plus 5cm}int64\_\-t Buffer::getLongLong (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a515cf0ba59f1970b039362ef22cdcf6c}
+
+
+Method to get a long long from the buffer. After calling this method, the position in the buffer is increased by eight bytes. 
+
+\begin{DoxyReturn}{Returns}
+Data with a size of long long. 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a5a6117d58e6abb0c7ea50d2c302a4d59}{
+\index{Buffer@{Buffer}!getLongLong@{getLongLong}}
+\index{getLongLong@{getLongLong}!Buffer@{Buffer}}
+\subsubsection[{getLongLong}]{\setlength{\rightskip}{0pt plus 5cm}int64\_\-t Buffer::getLongLong (
+\begin{DoxyParamCaption}
+\item[{uint32\_\-t}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a5a6117d58e6abb0c7ea50d2c302a4d59}
+
+
+Method to get a long long from the the position passed to the function. After calling this method, the position in the buffer is increased by eight bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & position from which the data will be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data with a size of long long. 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a6c22f064293935062f5b61c1d924132d}{
+\index{Buffer@{Buffer}!getShort@{getShort}}
+\index{getShort@{getShort}!Buffer@{Buffer}}
+\subsubsection[{getShort}]{\setlength{\rightskip}{0pt plus 5cm}int16\_\-t Buffer::getShort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a6c22f064293935062f5b61c1d924132d}
+
+
+Method to get a short from the buffer. After calling this method, the position in the buffer is increased by two bytes. 
+
+\begin{DoxyReturn}{Returns}
+Data with a size of int16 (equivalent to short) 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a7eb9d5449cf6553dca6808775d7f5583}{
+\index{Buffer@{Buffer}!getShort@{getShort}}
+\index{getShort@{getShort}!Buffer@{Buffer}}
+\subsubsection[{getShort}]{\setlength{\rightskip}{0pt plus 5cm}int16\_\-t Buffer::getShort (
+\begin{DoxyParamCaption}
+\item[{uint32\_\-t}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a7eb9d5449cf6553dca6808775d7f5583}
+
+
+Method to get a short from the the position passed to the function. After calling this method, the position in the buffer is increased by two bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & position from which the data will be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data with a size of int16 (equivalent to short) 
+\end{DoxyReturn}
+\hypertarget{classBuffer_ac9e1313de63fd9815b38ace7bddc22d8}{
+\index{Buffer@{Buffer}!getUChar@{getUChar}}
+\index{getUChar@{getUChar}!Buffer@{Buffer}}
+\subsubsection[{getUChar}]{\setlength{\rightskip}{0pt plus 5cm}uint8\_\-t Buffer::getUChar (
+\begin{DoxyParamCaption}
+\item[{uint32\_\-t}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_ac9e1313de63fd9815b38ace7bddc22d8}
+
+
+Method to get an unsigned char from the the position passed to the function. After calling this method, the position in the buffer is increased by one byte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & position from which the data will be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data with a size of unsigned int8 (equivalent to unsigned char) 
+\end{DoxyReturn}
+\hypertarget{classBuffer_ab2d089a99d5bceb23d07d00bf745119a}{
+\index{Buffer@{Buffer}!getUChar@{getUChar}}
+\index{getUChar@{getUChar}!Buffer@{Buffer}}
+\subsubsection[{getUChar}]{\setlength{\rightskip}{0pt plus 5cm}uint8\_\-t Buffer::getUChar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_ab2d089a99d5bceb23d07d00bf745119a}
+
+
+Method to get an unsigned char from the buffer. After calling this method, the position in the buffer is increased by one byte. 
+
+\begin{DoxyReturn}{Returns}
+Data with a size of unsigned int8 (equivalent to unsigned char) 
+\end{DoxyReturn}
+\hypertarget{classBuffer_ad604cb82913c0453caa1f1ccad9ce860}{
+\index{Buffer@{Buffer}!getUInt@{getUInt}}
+\index{getUInt@{getUInt}!Buffer@{Buffer}}
+\subsubsection[{getUInt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\_\-t Buffer::getUInt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_ad604cb82913c0453caa1f1ccad9ce860}
+
+
+Method to get an unsigned integer from the buffer. After calling this method, the position in the buffer is increased by four bytes. 
+
+\begin{DoxyReturn}{Returns}
+Data with a size of unsigned int32 (equivalent to unsigned int) 
+\end{DoxyReturn}
+\hypertarget{classBuffer_aa05686a1ed29f3d32414d5a518033201}{
+\index{Buffer@{Buffer}!getUInt@{getUInt}}
+\index{getUInt@{getUInt}!Buffer@{Buffer}}
+\subsubsection[{getUInt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\_\-t Buffer::getUInt (
+\begin{DoxyParamCaption}
+\item[{uint32\_\-t}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_aa05686a1ed29f3d32414d5a518033201}
+
+
+Method to get an unsigned integer from the the position passed to the function. After calling this method, the position in the buffer is increased by four bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & position from which the data will be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data with a size of unsigned int32 (equivalent to unsigned int) 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a7145a0142c6dc0c31e1cac08d4f49435}{
+\index{Buffer@{Buffer}!getULong@{getULong}}
+\index{getULong@{getULong}!Buffer@{Buffer}}
+\subsubsection[{getULong}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Buffer::getULong (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a7145a0142c6dc0c31e1cac08d4f49435}
+
+
+Method to get an unsigned long from the buffer. After calling this method, the position in the buffer is increased by four bytes. 
+
+\begin{DoxyReturn}{Returns}
+Data with a size of unsigned long. 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a70db4c2d0ad70f73ed930a0581dbb1e4}{
+\index{Buffer@{Buffer}!getULong@{getULong}}
+\index{getULong@{getULong}!Buffer@{Buffer}}
+\subsubsection[{getULong}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Buffer::getULong (
+\begin{DoxyParamCaption}
+\item[{uint32\_\-t}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a70db4c2d0ad70f73ed930a0581dbb1e4}
+
+
+Method to get an unsigned long from the the position passed to the function. After calling this method, the position in the buffer is increased by four bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & position from which the data will be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data with a size of unsigned long. 
+\end{DoxyReturn}
+\hypertarget{classBuffer_af73ab97665bd53f27bd142234b2ee749}{
+\index{Buffer@{Buffer}!getULongLong@{getULongLong}}
+\index{getULongLong@{getULongLong}!Buffer@{Buffer}}
+\subsubsection[{getULongLong}]{\setlength{\rightskip}{0pt plus 5cm}uint64\_\-t Buffer::getULongLong (
+\begin{DoxyParamCaption}
+\item[{uint32\_\-t}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_af73ab97665bd53f27bd142234b2ee749}
+
+
+Method to get an unsigned long long from the the position passed to the function. After calling this method, the position in the buffer is increased by eight bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & position from which the data will be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data with a size of long long. 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a569f8603324b4db03f4461932f7537cb}{
+\index{Buffer@{Buffer}!getULongLong@{getULongLong}}
+\index{getULongLong@{getULongLong}!Buffer@{Buffer}}
+\subsubsection[{getULongLong}]{\setlength{\rightskip}{0pt plus 5cm}uint64\_\-t Buffer::getULongLong (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a569f8603324b4db03f4461932f7537cb}
+
+
+Method to get an unsigned long long from the buffer. After calling this method, the position in the buffer is increased by eight bytes. 
+
+\begin{DoxyReturn}{Returns}
+Data with a size of long long. 
+\end{DoxyReturn}
+\hypertarget{classBuffer_aafccc403480bca311e3837a691e696b4}{
+\index{Buffer@{Buffer}!getUShort@{getUShort}}
+\index{getUShort@{getUShort}!Buffer@{Buffer}}
+\subsubsection[{getUShort}]{\setlength{\rightskip}{0pt plus 5cm}uint16\_\-t Buffer::getUShort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_aafccc403480bca311e3837a691e696b4}
+
+
+Method to get an unsigned short from the buffer. After calling this method, the position in the buffer is increased by two bytes. 
+
+\begin{DoxyReturn}{Returns}
+Data with a size of unsigned int16 (equivalent to unsigned short) 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a7951a4bc4a72c3af88c829903949d8c7}{
+\index{Buffer@{Buffer}!getUShort@{getUShort}}
+\index{getUShort@{getUShort}!Buffer@{Buffer}}
+\subsubsection[{getUShort}]{\setlength{\rightskip}{0pt plus 5cm}uint16\_\-t Buffer::getUShort (
+\begin{DoxyParamCaption}
+\item[{uint32\_\-t}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a7951a4bc4a72c3af88c829903949d8c7}
+
+
+Method to get an unsigned short from the the position passed to the function. After calling this method, the position in the buffer is increased by two bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & position from which the data will be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data with a size of unsigned int16 (equivalent to unsigned short) 
+\end{DoxyReturn}
+\hypertarget{classBuffer_a61907c35a945626945f77752ec9eaa80}{
+\index{Buffer@{Buffer}!size@{size}}
+\index{size@{size}!Buffer@{Buffer}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}uint32\_\-t Buffer::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classBuffer_a61907c35a945626945f77752ec9eaa80}
+
+
+Method to get the buffer size. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classBuffer}{Buffer} size. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Buffer_8h}{Buffer.h}\item 
+Buffer.cpp\end{DoxyCompactItemize}
