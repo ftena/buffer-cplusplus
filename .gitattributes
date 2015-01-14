@@ -2,4 +2,5 @@
 # Linguist overrides
 ###############################################################################
 
-doc/* linguist-language=C++
+doc/html/* linguist-language=C++
+doc/latex/* linguist-language=C++
