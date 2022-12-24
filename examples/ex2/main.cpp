@@ -1,5 +1,6 @@
 #include <iostream>
 #include <bitset>
+#include <cstring>
 #include "Buffer.h"
 
 int main(int argc, char** argv)
@@ -34,13 +35,13 @@ int main(int argc, char** argv)
 
 		int pos = 0;
 
-		memcpy(&_byteBuffer[pos], (uint8_t*)&value1, sizeof(short));
+		std::memcpy(&_byteBuffer[pos], (uint8_t*)&value1, sizeof(short));
 		pos += 2;
-		memcpy(&_byteBuffer[pos], (uint8_t*)&value2, sizeof(short));
+		std::memcpy(&_byteBuffer[pos], (uint8_t*)&value2, sizeof(short));
 		pos += 2;
-		memcpy(&_byteBuffer[pos], (uint8_t*)&value3, sizeof(short));
+		std::memcpy(&_byteBuffer[pos], (uint8_t*)&value3, sizeof(short));
 		pos += 2;
-		memcpy(&_byteBuffer[pos], (uint8_t*)&value4, sizeof(short));
+		std::memcpy(&_byteBuffer[pos], (uint8_t*)&value4, sizeof(short));
 
 		// Init Buffer class
 		Buffer b(_byteBuffer, sizeof(short)*4);

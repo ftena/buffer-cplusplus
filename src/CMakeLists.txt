@@ -9,9 +9,6 @@ SET( LIB_NAME "Buffer" )
 ####   common parameters
 ####################################
 
-## project name
-PROJECT( ${LIB_NAME} )
-
 ## require a minimum version of CMake
 CMAKE_MINIMUM_REQUIRED ( VERSION 2.6 FATAL_ERROR )
 

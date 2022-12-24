@@ -1,5 +1,6 @@
 #include <iostream>
 #include <bitset>
+#include <cstring>
 #include "Buffer.h"
 
 /*
@@ -57,21 +58,21 @@ int main(int argc, char** argv)
 		// Put values in buffer
 		int pos = 0;
 
-		memcpy(&_byteBuffer[pos], (uint8_t*)&int_value, sizeof(int));
+		std::memcpy(&_byteBuffer[pos], (uint8_t*)&int_value, sizeof(int));
 		pos += sizeof(int);
-		memcpy(&_byteBuffer[pos], (uint8_t*)&unsigned_int_value, sizeof(unsigned int));
+		std::memcpy(&_byteBuffer[pos], (uint8_t*)&unsigned_int_value, sizeof(unsigned int));
 		pos += sizeof(unsigned int);
-		memcpy(&_byteBuffer[pos], (uint8_t*)&float_value, sizeof(float));
+		std::memcpy(&_byteBuffer[pos], (uint8_t*)&float_value, sizeof(float));
 		pos += sizeof(float);
-		memcpy(&_byteBuffer[pos], (uint8_t*)&double_value, sizeof(double));
+		std::memcpy(&_byteBuffer[pos], (uint8_t*)&double_value, sizeof(double));
 		pos += sizeof(double);
-		memcpy(&_byteBuffer[pos], (uint8_t*)&long_value, sizeof(long));
+		std::memcpy(&_byteBuffer[pos], (uint8_t*)&long_value, sizeof(long));
 		pos += sizeof(long);
-		memcpy(&_byteBuffer[pos], (uint8_t*)&unsigned_long_value, sizeof(unsigned long));
+		std::memcpy(&_byteBuffer[pos], (uint8_t*)&unsigned_long_value, sizeof(unsigned long));
 		pos += sizeof(unsigned long);
-		memcpy(&_byteBuffer[pos], (uint8_t*)&long_long_value, sizeof(int64_t));
+		std::memcpy(&_byteBuffer[pos], (uint8_t*)&long_long_value, sizeof(int64_t));
 		pos += sizeof(int64_t);
-		memcpy(&_byteBuffer[pos], (uint8_t*)&unsigned_long_long_value, sizeof(uint64_t));
+		std::memcpy(&_byteBuffer[pos], (uint8_t*)&unsigned_long_long_value, sizeof(uint64_t));
 
 		// Init Buffer class
 		Buffer b(_byteBuffer, size);
