@@ -1,23 +1,5 @@
-####################################
-####   specific parameters
-####################################
-
 ## application name
 SET( LIB_NAME "Buffer" )
-
-####################################
-####   common parameters
-####################################
-
-## require a minimum version of CMake
-CMAKE_MINIMUM_REQUIRED ( VERSION 2.6 FATAL_ERROR )
-
-## add definitions, compiler switches, etc.
-ADD_DEFINITIONS( -Wall -O2 )
-SET( CMAKE_CXX_FLAGS -g )
-
-## include (or not) the full compiler output
-SET( CMAKE_VERBOSE_MAKEFILE OFF )
 
 ## include directories
 INCLUDE_DIRECTORIES ( 
