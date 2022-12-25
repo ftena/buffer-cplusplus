@@ -10,12 +10,29 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
+## include directories
+include_directories( 
+	${CMAKE_CURRENT_SOURCE_DIR}/../src/
+)
+
+## library paths
+## adds the paths in which the linker should search for libraries.
+link_directories(
+	${CMAKE_CURRENT_SOURCE_DIR}/../src/
+)
+
+SET( LIBS
+	Buffer
+)
+
 add_executable(
   test
   test.cpp
 )
+
 target_link_libraries(
   test
+  ${LIBS}
   GTest::gtest_main
 )
 

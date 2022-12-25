@@ -1,5 +1,5 @@
 ## project name
-PROJECT( "Buffer" )
+project( "Buffer")
 
 ## require a minimum version of CMake
 CMAKE_MINIMUM_REQUIRED ( VERSION 3.14 FATAL_ERROR )

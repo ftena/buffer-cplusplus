@@ -1,9 +1,11 @@
+#include "Buffer.h"
 #include <gtest/gtest.h>
 
-// Demonstrate some basic assertions.
-TEST(Test, BasicAssertions) {
-  // Expect two strings not to be equal.
-  EXPECT_STRNE("hello", "world");
+TEST(Buffer, Size)
+{
+  // Expect size to be equal.
+  unsigned char *_byteBuffer = new unsigned char[5];
+  Buffer b(_byteBuffer, sizeof(char) * 5);
   // Expect equality.
-  EXPECT_EQ(7 * 6, 42);
+  EXPECT_EQ(5, b.size());
 }
