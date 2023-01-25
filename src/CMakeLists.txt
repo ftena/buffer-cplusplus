@@ -1,32 +1,24 @@
 ## application name
-SET( LIB_NAME "Buffer" )
-
-## include directories
-INCLUDE_DIRECTORIES ( 
-)
-
-## library paths
-LINK_DIRECTORIES(
-)
-
-## libraries
-SET( LIBS
-	)
+set( LIB_NAME "Buffer" )
 
 ## sources
-SET( SOURCES 
+set( SOURCES 
 	${CMAKE_CURRENT_SOURCE_DIR}/Buffer.cpp
 )
 
 ## headers
-SET( HEADERS 
+set( HEADERS 
 	${CMAKE_CURRENT_SOURCE_DIR}/Buffer.h
 )
 
 ## dynamic library
-OPTION( BUILD_SHARED_LIBS "Build with shared libraries." ON )
-ADD_LIBRARY( ${LIB_NAME} SHARED ${HEADERS} ${SOURCES} )
+option( BUILD_SHARED_LIBS "Build with shared libraries." ON )
+add_library( ${LIB_NAME} SHARED ${HEADERS} ${SOURCES} )
 
-## link
-TARGET_LINK_LIBRARIES( ${LIB_NAME} ${LIBS} )
+## include directories to use when compiling a given target.
+## old ways, like include_directories or link_directories, are legacy.
+## more info:
+## https://cmake.org/cmake/help/latest/command/include_directories.html
+## https://cmake.org/cmake/help/latest/command/link_directories.html
+target_include_directories(${LIB_NAME} PUBLIC .)
 
