@@ -27,7 +27,7 @@ int main(int argc, char** argv)
 	// Example - get signed and unsigned short
 	{
 		// Init buffer
-		unsigned char *_byteBuffer = new unsigned char[6];
+		unsigned char *_byteBuffer = new unsigned char[8];
 		short value1 = 32767;
 		unsigned short value2 = 65534;
 		short value3 = -32767;
