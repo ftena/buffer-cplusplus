@@ -7,8 +7,9 @@ Please, read header for more information.
 
 # Requirements
 
+- gcc 14
 - CMake
-- conan 2.0
+- conan 2
 
 # Compilation
 
