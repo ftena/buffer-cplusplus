@@ -13,9 +13,6 @@ jobs:
       - name: Setup Conan
         uses: conan-io/setup-conan@v1
 
-      - name: Detect profile
-        run: conan profile detect
-
       - name: Install dependencies
         run: |
           mkdir build
