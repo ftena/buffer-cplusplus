@@ -17,7 +17,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          conan install .. -pr=default -pr:b=default --output-folder .
+          conan install .. -pr=gcc11_cxx17_release -pr:b=default --output-folder .
 
       - name: Configure CMake
         run: |
