@@ -1,0 +1,27 @@
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Conan
+        uses: conan-io/setup-conan@v1
+
+      - name: Detect profile
+        run: conan profile detect
+
+      - name: Install dependencies
+        run: |
+          mkdir build
+          cd build
+          conan install .. -pr=default -pr:b=default --output-folder .
+
+      - name: Configure CMake
+        run: |
+          cd build
+          cmake .. -DCMAKE_TOOLCHAIN_FILE=./conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build
+        run: cmake --build build --parallel 4
