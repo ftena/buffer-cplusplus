@@ -15,6 +15,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          conan config install conan_profiles
           mkdir build
           cd build
           conan install .. -pr=gcc11_cxx17_release -pr:b=default --output-folder .
